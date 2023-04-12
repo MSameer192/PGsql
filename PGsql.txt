@@ -1,0 +1,20 @@
+1- \conninfo
+2- \l
+3- CREATE DATABASE studnts;
+4-  \c studnts
+
+clear \! cls
+
+
+5- CREATE TABLE studnts (
+	ID SERIAL PRIMARY KEY,
+	name VARCHAR(255),
+	email VARCHAR(255),
+	agr INT, 
+	dob DATE);
+6- INSERT INTO students (name, email, age, dob)
+7- VALUES ('SAMEER', 'sameer@gmail.com', 48, '2022-04-04'),('HAMZA', 'hamza@gmail.com', 50, '2022-04-10') 
+
+8- SELECT * FROM studnts;
+
+9- SELECT * FROM studnts WHERE id = 1; 
